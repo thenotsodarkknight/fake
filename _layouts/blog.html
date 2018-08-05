@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<!-- Main -->
+<section id="main" class="">
+<section id="banner" style="background-image:url({{ page.image | prepend: site.baseurl  }})">
+    <div class="inner">
+        <h2 style="font-weight: 200; font-size : 80px;">{{ page.title }}</h2>
+        <h3 style="color: #ffffff;  font-size : 40px;">{{ page.author }}</h3>
+    </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="2u">
+                <br>
+            </div>
+            <div class="8u skel-cell-important "><br><br>
+                <section class="special">
+                <h2 style="font-weight: 1000; font-size : 60px;">{{ page.title }}</h2>
+                </section>
+               
+                    <div style="font-weight: 100; font-size : 20px;">
+                        {{ content }}
+                    </div>
+            </div>
+             <div class="2u">
+                <br>
+            </div>
+        </div>
+            <hr>
+            <section id="two" class="style1 special">
+                    <h3 style="font-size : 40px; font-weight: 300;">{{ page.author }}</h3>
+                    </section>
+                    <div class="row">
+                    <div class="2u">
+                <br>
+            </div>
+                    <div class="8u" style="font-weight: 100; font-size : 20px;">
+                        <p>
+                            <img src="{{ page.author_image | prepend: site.baseurl  }}" style="float:left;width:100px;height:100px;">
+                             {{ page.about_author }}
+                        </p>
+                    </div>
+                    <div class="2u">
+                <br>
+            </div>
+        </div>
+        <section  class="style1 special">
+                <ul class="actions">
+                            <li><a href="/blogs" class="button alt">Back to the blog list</a></li>
+                        </ul>
+        </section>
+        {% include disque.html %}
+            <br>
+
+    </div>
+    </section>
